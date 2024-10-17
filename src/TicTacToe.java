@@ -146,6 +146,15 @@ public class TicTacToe {
         return false;
     }
 
-
+    private static boolean isDraw(char[][] gameTable) {
+        for (int i = 0; i < gameTable.length; i++) {
+            for (int j = 0; j < gameTable.length; j++) {
+                if (gameTable[i][j] == ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
 }
